@@ -1,0 +1,150 @@
+#landingpage{
+    top: 0;
+    position: absolute;
+    height: 80vh;
+    margin: 0vw;
+    width: 100vw;
+    animation: topDashAnimation 30s infinite cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent;
+    background-blend-mode: color;
+    z-index: 99;
+    position: relative;
+}
+#landingpage::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #071111;
+    opacity: 0.95;
+    z-index: -1;
+    animation: none
+}
+@keyframes topDashAnimation {
+    0% { 
+        background-image: url("/static/images/overallgithubstats.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: scale(1);
+        
+    }
+
+    25% { 
+        background: url("/static/images/repositorystats2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: scale(1);
+        transition: background-image 0.5ms ease-in-out;
+    }
+    50% { 
+        background: url("/static/images/overallgithubstats1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.9;
+        
+    }
+    75% { 
+        background: url("/static/images/repositorystats3.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: scale(1);
+        transition: background-image 0.5ms ease-in-out;
+    }
+    85% { 
+        background: url("/static/images/repositorystats4.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: scale(1);
+        transition: background-image 0.5ms ease-in-out;
+    }
+    100% { 
+        background: url("/static/images/userprofile.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: scale(1);
+        transition: background-image 0.5ms ease-in-out;
+    }
+}
+
+#landingpagebody{
+    margin-top: 0%;
+    margin-left: 5%;
+    width: 85%;
+    height: 55%;
+    border-radius: 9px;
+    text-align: center;
+}
+#textcenter{
+    border: 1px rgb(5, 5, 5) dotted;
+    border-radius: 10px;
+    margin: auto;
+    transition: transform 0.3s ease-in-out;
+}
+#textcenter:hover{
+    transform: scale(1.05);
+}
+#textcenter:active{
+    transform: scale(0.95);
+}
+#h1text{
+    color: wheat;
+    font-size: 80px;
+    font-stretch: expanded;
+    font-size-adjust: 80%;
+    position: relative;
+    font-family: cursive;
+    font-weight: bolder;
+    font-style:normal;
+    margin-top: 15vh;
+}
+#h1text::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 2px rgba(17, 17, 16, 0.938); 
+    z-index: -1; /* Placed behind the text */
+}
+#h2text{
+    color: whitesmoke;
+    font-style: italic;
+    font-size: 25px;
+}
+#shortInfo{
+    margin-top: 22vh;
+    width: 80%;
+    height: 25%;
+    margin-left: 10%;
+    z-index: 100;
+    background-color: white;
+    border-radius: 15px;
+    align-items: center;
+    padding-top: 1%;
+    border-bottom: 3px #071111 solid;
+    border-left: 1px #595c5c solid;
+    border-right: 1px #595c5c solid;
+    overflow: auto;
+}
+#shortInfo:hover{
+    transform: scale(1.01);
+}
+#shortInfotext{
+    margin: 4%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: oblique;
+    color: #181616d5;
+}
+#shortInfotext2{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-style: italic;
+    font-size: 15px;
+    color: rgb(34, 33, 33);
+    padding-left: 25px;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal</title>
+    <link rel="stylesheet" href="static/styles/header.css"></link>
+    <link rel="stylesheet" href="static/styles/userinfo.css"></link>
+    <link rel="stylesheet" href="static/styles/LandingPage.css"></link>
+    <link rel="stylesheet" href="static/styles/features.css"></link>
+    <link rel="stylesheet" href="static/styles/about.css"></link>
+    <script type="text/javascript" src="static/scripts/enternamebutton.js"></script>
+    <script type="text/javascript" src="static/scripts/typewriter.js"></script>
+    <!--<script type="javascript" src="static/scripts/featuresanimation.js"></script>-->
+</head>
+<body id="body0">
+    <!--ENTER USER DATA TO LOGIN-->
+    <div id="enterUserData">
+        <div id="elementsBorder">
+            <button id="enterNameButton">Enter Your Github Info</button>
+            <form>
+                <div id="enterInfo">
+                    <label for="githubname">Enter your github username: </label>
+                    <input type="text" id="githubname" name="githubname">
+
+                    <label for="token">Enter Auth Token: </label>
+                    <input type="text" id="token" name="token">
+
+                    <button id="submitButton">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--HEADER-->
+    <div id="header">
+        <div id="name">
+            <h1 id="headertext">Terminal</h1>
+        </div>
+        <div id="navigation">
+            <div id="homeDiv">
+                <div id="styling">
+                    <div  id="introdatalink">
+                        <a class="active" href="#landingpage">Home</a>
+                    </div>
+                    <div  id="featuresId">
+                        <a class="active" href="#features">Features</a>
+                    </div>
+                    <div  id="aboutId">
+                        <a class="active" href="#about">About</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div id="buttondiv">
+            <button id="loginbutton"  onclick="showLogInInfo()">LogIn</button>
+        </div>
+    </div>
+    <!--LANDINGPAGE WITH ANIMATION-->
+    <div id="landingpage">
+            <div id="landingpagebody">
+                <div id="textcenter">
+                    <h1 id="h1text">Terminal</h1>
+                    <h2 id="h2text"></h2>
+                </div>
+            </div>
+            <div id="shortInfo">
+                <div id="shortInfotext">Ever wondered what your GitHub activity reveals about your coding journey?????   Want to track progress, identify strengths, and uncover areas for improvement? Look no further! Our innovative feature, the GitHub Data Dashboard, provides a comprehensive analysis of your account, empowering you to:
+                    Gain a Bird's-Eye View, Deep Dive into Your Contributions, Enhance Your Collaboration, Go Beyond the Basics,
+                    plus it entails easy to use features. 
+                </div>
+            </div>
+    </div>
+    <!--FEATURES AND ABOUT-->
+    <div>
+        <div id="features">
+            <h2 id="featuresheader">Features</h2>
+            <div id="featuresinfo">
+                <div id="featuresdiv1">
+                    <div id="feature1">
+                        <div id="feature1photo"></div>
+                        <h2 id="feature1text">Get the full story behind your GitHub account with our comprehensive activity overview. Unveil the mastermind behind the username, explore the vast landscape of repositories you've cultivated, and trace the journey of creation and updates with detailed timestamps. Even unlock access to your associated email, fostering an even deeper understanding of your GitHub presence. Dive in and gain insightful knowledge, all conveniently presented in one centralized location.</h2>
+                    </div>
+                    <div id="feature2">
+                        <div id="feature2photo"></div>
+                        <h2 id="feature2text">Get an instant snapshot of your follower count, following count, and captivating "About" section. Dive deeper into your affiliations with organizations, and connect with your social media presence - all in one seamless view.</h2>
+                    </div>
+                </div>
+                <div id="featuresdiv2">
+                    <div id="feature3">
+                        <div id="feature3photo"></div>
+                        <h2 id="feature3text">Dive deep into your codebase with our intuitive repository section! Get an instant snapshot of each project, including file and directory counts, visibility status (public or private), creation and last update dates, and even the number of open issues. This feature empowers you to quickly identify key information, prioritize tasks, and stay on top of your development workflow. Explore, analyze, and optimize like never before!</h2>
+                    </div>
+                    <div id="feature4">
+                        <div id="feature4photo"></div>
+                        <h2 id="feature4text">Unfurl a dropdown for each repository, revealing key stats at a glance. Explore directory counts, file numbers, and visibility (public or private). Dive and take control</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <div id="aboutinfo">
+                <h1 id="aboutheader">About</h1>
+                <div id="aboutdiv">
+                    <div id="authorsname">
+                        <div>Author's Info</div>
+                        <div id="moreinfo">Driven by innovation and a passion for problem-solving and technology, I'm a computer programmer currently diving deep into the worlds of computer engineering and electronics at Mount Kenya university and software engineering at Holberton School. My main goal is to always to craft ideas that bring to life ideas. Always eager to learn, collaborate, and push the boundaries of technology, excited to see what the future holds.</div>
+                        <div id="quote">"A very small man can cast a large shadow"</div>
+                    </div>
+                    <div id="projectsinfo">
+                        <div>About Project</div>
+                        <div id="moreinfo2">Terminal is a portfolio project developed for Holberton school. It focuses on analyzing GitHub data and visualizing it in simple understandable format. It involves use of GitHub's API calls, and technologies such as HTML5, CSS, and JavaScript. It uses d3, a JavaScript library, to visualize data acquired after parsing it, to make it more presentable inform of visual graphs and charts.</div>
+                        <div id="links"><a href="https://github.com/DAVENJAGI/Terminal1">GitHub</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
