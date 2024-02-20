@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const textElement = document.getElementById("h2text");
-    const text = "Where all your GitHub data makes more sense";
+    const text = "Where all your GitHub data makes more sense !!!";
     let index = 0;
 
     function typeWriter() {
@@ -8,8 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
         textElement.textContent += text.charAt(index);
         index++;
     } else {
-        textElement.textContent = "";
-        index = 0;
+        setTimeout(() => {
+            textElement.textContent = "";
+            index = 0;
+        }, 1000);
     }
 
     setTimeout(typeWriter, 240);

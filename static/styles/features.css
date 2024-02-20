@@ -48,14 +48,11 @@
     margin-top: 1%;
     height: 90%;
     border-radius: 7px;
-    background-color:white;
-    z-index: 5;
-    overflow: auto;
+    background-color:whitesmoke;
 
 }
 #feature1:hover{
     transform: scale(1.02);
-    border-color: black;
     border-bottom: 3px black solid;
     border-left: 0.5px solid #1f1e1e;
     border-right: 0.5px solid #1f1e1e;
@@ -82,7 +79,6 @@
     height: 90%;
     border-radius: 7px;
     background-color:whitesmoke;
-    overflow: auto;
 }
 #feature3:hover{
     transform: scale(1.02);

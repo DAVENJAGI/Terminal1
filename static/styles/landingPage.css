@@ -7,7 +7,7 @@
     animation: topDashAnimation 30s infinite cubic-bezier(0.4, 0, 0.2, 1);
     background-color: transparent;
     background-blend-mode: color;
-    z-index: 99;
+    z-index: 251;
     position: relative;
 }
 #landingpage::before{
