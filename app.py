@@ -3,7 +3,7 @@
 from flask import Flask, render_template
 
 app = Flask(__name__)
-
+# Routes to page.html
 @app.route("/Terminal")
 def landpage():
     return render_template('page.html')
